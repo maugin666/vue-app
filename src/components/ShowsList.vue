@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-if="shows.length === 0">Search to see shows</div>
+        <div class="no-shows" v-if="shows.length === 0">No shows</div>
         <ul class="container">
             <ShowItem
                 v-for="show in shows"
@@ -24,21 +24,22 @@ export default {
 
 <style>
 .container {
-    margin: 0;
+    margin: 30px 0;
     padding: 0;
     list-style: none;
     display: grid;
     place-items: center;
     grid-gap: 10px;
-    grid-template-columns: 22vw 22vw 22vw 22vw;
+    grid-template-columns: 45vw 45vw;
     justify-content: space-around;
 }
-@media only screen
-  and (min-width: 360px)
-  and (max-width: 1000px) {
+.no-shows {
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 1000px) {
     .container {
-        grid-gap: 10px;
-        grid-template-columns: 45vw 45vw;
+       grid-template-columns: 22vw 22vw 22vw 22vw;
     }
 }
 </style>

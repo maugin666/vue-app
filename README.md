@@ -1,4 +1,5 @@
-# some-vue-app
+# vue-app
+The app allows you to search TV shows by their name and renders the result in grid layout.
 
 ## Project setup
 ```
@@ -24,6 +25,3 @@ npm run test:unit
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
